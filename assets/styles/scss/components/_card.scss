@@ -16,15 +16,19 @@
   box-shadow: var(--box-shadow);
   overflow: hidden;
 
+  &:hover,
+  &:focus-visible {
+    cursor: pointer;
+
+    .card__title {
+      color: var(--color-yellow);
+    }
+  }
+
   &__header {
     display: grid;
     gap: var(--space-150);
     margin-block-end: var(--space-150);
-  }
-
-  &__title:hover {
-    cursor: pointer;
-    color: var(--color-yellow);
   }
 
   &__image {

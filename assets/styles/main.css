@@ -75,14 +75,16 @@ h2 {
   box-shadow: var(--box-shadow);
   overflow: hidden;
 }
+.card:hover, .card:focus-visible {
+  cursor: pointer;
+}
+.card:hover .card__title, .card:focus-visible .card__title {
+  color: var(--color-yellow);
+}
 .card__header {
   display: grid;
   gap: var(--space-150);
   margin-block-end: var(--space-150);
-}
-.card__title:hover {
-  cursor: pointer;
-  color: var(--color-yellow);
 }
 .card__image {
   border-radius: calc(var(--space-50) * 2.5);
