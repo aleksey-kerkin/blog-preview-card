@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Figtree";
+  font-family: 'Figtree';
   font-style: normal;
   font-weight: 800;
   font-stretch: 100%;
-  src: url(/assets/fonts/figtree/figtree-extrabold.woff2) format("woff2");
+  src: url(../fonts/figtree/figtree-extrabold.woff2) format('woff2');
   font-display: swap;
 }
 @font-face {
-  font-family: "Figtree";
+  font-family: 'Figtree';
   font-style: normal;
   font-weight: 500;
   font-stretch: 100%;
-  src: url(/assets/fonts/figtree/figtree-medium.woff2) format("woff2");
+  src: url(../fonts/figtree/figtree-medium.woff2) format('woff2');
   font-display: swap;
 }
 :root {
@@ -23,7 +23,7 @@
   --space-150: calc(var(--space-300) / 2);
   --space-100: calc(var(--space-300) / 3);
   --space-50: calc(var(--space-300) / 6);
-  --font-family: "Figtree";
+  --font-family: 'Figtree';
   --box-shadow: var(--space-100) var(--space-100) 0 0 hsl(0, 0%, 0%);
 }
 
@@ -75,10 +75,12 @@ h2 {
   box-shadow: var(--box-shadow);
   overflow: hidden;
 }
-.card:hover, .card:focus-visible {
+.card:hover,
+.card:focus-visible {
   cursor: pointer;
 }
-.card:hover .card__title, .card:focus-visible .card__title {
+.card:hover .card__title,
+.card:focus-visible .card__title {
   color: var(--color-yellow);
 }
 .card__header {
