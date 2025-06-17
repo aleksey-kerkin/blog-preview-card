@@ -1,0 +1,36 @@
+@use '../utils/mixins' as *;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: var(--color-gray-500);
+  background-color: var(--color-yellow);
+
+  @include fluid-text(16, 14);
+}
+
+h1 {
+  font-weight: 800;
+  color: var(--color-gray-950);
+
+  @include fluid-text(24, 20);
+}
