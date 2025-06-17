@@ -1,0 +1,15 @@
+{
+  "name": "blog-preview-card",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blog preview card coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch ./assets/styles/scss/main.scss ./assets/styles/main.css"
+  },
+  "keywords": [],
+  "author": "Aleksey Kerkin <aleksey.kerkin@yandex.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
