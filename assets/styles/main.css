@@ -1,19 +1,17 @@
-/* figtree-extrabold */
 @font-face {
-  font-family: Figtree;
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 800;
   font-stretch: 100%;
-  src: local("Figtree ExtraBold"), local("Figtree-ExtraBold"), url(../../../fonts/figtree/figtree-extrabold.woff2) format("woff2");
+  src: url(/assets/fonts/figtree/figtree-extrabold.woff2) format("woff2");
   font-display: swap;
 }
-/* figtree-medium */
 @font-face {
-  font-family: Figtree;
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 500;
   font-stretch: 100%;
-  src: local("Figtree Medium"), local("Figtree-Medium"), url(../../../fonts/figtree/figtree-medium.woff2) format("woff2");
+  src: url(/assets/fonts/figtree/figtree-medium.woff2) format("woff2");
   font-display: swap;
 }
 :root {
@@ -25,7 +23,7 @@
   --space-150: calc(var(--space-300) / 2);
   --space-100: calc(var(--space-300) / 3);
   --space-50: calc(var(--space-300) / 6);
-  --font-family: Figtree;
+  --font-family: "Figtree";
   --box-shadow: var(--space-100) var(--space-100) 0 0 hsl(0, 0%, 0%);
 }
 
@@ -56,7 +54,7 @@ body {
   font-size: clamp(0.875rem, 0.8309859155rem + 0.1877934272vw, 1rem);
 }
 
-h1 {
+h2 {
   font-weight: 800;
   color: var(--color-gray-950);
   font-size: clamp(1.25rem, 1.161971831rem + 0.3755868545vw, 1.5rem);
@@ -66,7 +64,9 @@ h1 {
   position: absolute;
   margin: auto;
   inset: 0;
-  max-inline-size: 24rem;
+  inline-size: clamp(20.4375rem, 19.1830985915rem + 5.3521126761vw, 24rem);
+  min-block-size: 31.3125rem;
+  block-size: fit-content;
   max-block-size: 32.625rem;
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-950);
@@ -77,7 +77,47 @@ h1 {
 }
 .card__header {
   display: grid;
-  gap: 0.75rem;
+  gap: var(--space-150);
+  margin-block-end: var(--space-150);
+}
+.card__title:hover {
+  cursor: pointer;
+  color: var(--color-yellow);
+}
+.card__image {
+  border-radius: calc(var(--space-50) * 2.5);
+  margin-block-end: var(--space-150);
+  min-height: 12.5rem;
+  object-fit: cover;
+}
+.card__tag {
+  border-radius: var(--space-50);
+  background-color: var(--color-yellow);
+  max-width: fit-content;
+  padding: var(--space-50) var(--space-150);
+  font-weight: 800;
+  color: var(--color-gray-950);
+  font-size: clamp(0.75rem, 0.7059859155rem + 0.1877934272vw, 0.875rem);
+}
+.card__date {
+  font-size: clamp(0.75rem, 0.7059859155rem + 0.1877934272vw, 0.875rem);
+}
+.card__description {
+  margin-block-end: var(--space-300);
+}
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-150);
+}
+.card__author-portrait {
+  max-width: 2rem;
+  border-radius: 100%;
+}
+.card__author-name {
+  font-weight: 800;
+  color: var(--color-gray-950);
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
 }
 
 /*# sourceMappingURL=main.css.map */

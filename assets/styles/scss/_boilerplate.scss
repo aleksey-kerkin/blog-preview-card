@@ -1,4 +1,4 @@
-@use '../utils/mixins' as *;
+@use './utils' as *;
 
 *,
 ::before,
@@ -28,7 +28,7 @@ body {
   @include fluid-text(16, 14);
 }
 
-h1 {
+h2 {
   font-weight: 800;
   color: var(--color-gray-950);
 

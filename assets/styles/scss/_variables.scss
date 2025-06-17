@@ -1,4 +1,4 @@
-@use '../utils/functions' as *;
+@use './utils/functions' as *;
 
 :root {
   // colors
@@ -14,7 +14,7 @@
   --space-50: calc(var(--space-300) / 6);
 
   // font-family
-  --font-family: Figtree;
+  --font-family: 'Figtree';
 
   // shadow
   --box-shadow: var(--space-100) var(--space-100) 0 0 hsl(0, 0%, 0%);
